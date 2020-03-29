@@ -54,6 +54,7 @@ static const Layout layouts[] = {
 	{ "###",      horizgrid },
 	{ "HHH",      grid },
 	{ "[D]",      deck },
+	{ "|||",      col },
 };
 
 /* key definitions */

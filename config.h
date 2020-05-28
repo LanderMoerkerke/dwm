@@ -144,6 +144,7 @@ static Key keys[] = {
 	{ ALTKEY,                       XK_9,        setlayout,      {.v = &layouts[8]} },
 	{ ALTKEY,                       XK_0,        setlayout,      {.v = &layouts[8]} },
 
+	{ MODKEY,                       XK_s,        togglesticky,   {0} },
 	{ MODKEY|ShiftMask,             XK_space,    togglefloating, {0} },
 
 	{ MODKEY,                       XK_0,        view,           {.ui = ~0 } },

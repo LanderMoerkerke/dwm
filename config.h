@@ -81,14 +81,12 @@ static const Layout layouts[] = {
 	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
 /* commands */
-static const char scratchpadname[] = "scratchpad";
-static const char *scratchpad_cmd[] = { "urxvt", "-title", scratchpadname, "-geometry", "120x50", "-e", "scratch-tmux", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_c,        killclient,     {0} },
 
-	{ MODKEY,                       XK_t,        togglescratch,  {.v = scratchpad_cmd } },
+	/* { MODKEY,                       XK_t,        togglescratch,  {.v = scratchpad_cmd } }, */
 
 	{ MODKEY|ShiftMask,             XK_t,        togglebar,      {0} },
 

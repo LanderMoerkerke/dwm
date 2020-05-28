@@ -32,6 +32,21 @@ static const char *colors[][3]      = {
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
 
+typedef struct {
+	const char *name;
+	const void *cmd;
+} Sp;
+const char *spcmd1[] = {"urxvtc", "-name", "sp-tmux", "-geometry", "120x50", "-e", "scratch-tmux", NULL };
+const char *spcmd2[] = {"urxvtc", "-name", "sp-lf",   "-geometry", "144x41", "-e", "lf", NULL };
+const char *spcmd3[] = {"urxvtc", "-name", "sp-math", "-geometry", "100x40", "-e", "scratch-math", NULL };
+const char *spcmd4[] = {"caprine", NULL };
+static Sp scratchpads[] = {
+	/* name          cmd  */
+	{"sp-tmux",      spcmd1},
+	{"sp-lf",        spcmd2},
+	{"sp-math",      spcmd3},
+	{"caprine",      spcmd4},
+};
 
 /* tagging */
 static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
@@ -46,6 +61,12 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,       2,            0,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 	{ NULL,       "Spotify",  NULL,       7,            1,           -1 },
+	{ "Gimp",	  NULL,		  NULL,	      0,			1,			 -1 },
+	{ "Firefox",  NULL,		  NULL,	      1 << 8,		0,			 -1 },
+	{ NULL,		  "sp-tmux",  NULL,	      SPTAG(0),		1,			 -1 },
+	{ NULL,		  "sp-lf",	  NULL,	      SPTAG(1),		1,			 -1 },
+	{ NULL,		  "sp-math",  NULL,	      SPTAG(2),		1,			 -1 },
+	{ NULL,		  "caprine",  NULL,	      SPTAG(3),		1,			 -1 },
 };
 
 /* layout(s) */
@@ -87,6 +108,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_c,        killclient,     {0} },
 
 	/* { MODKEY,                       XK_t,        togglescratch,  {.v = scratchpad_cmd } }, */
+ 	{ MODKEY,            			XK_t,  	     togglescratch,  {.ui = 0 } },
+ 	{ MODKEY,            			XK_r,	     togglescratch,  {.ui = 1 } },
+ 	{ MODKEY|ShiftMask,   			XK_r,	     togglescratch,  {.ui = 2 } },
+ 	{ MODKEY|ShiftMask,   			XK_m,	     togglescratch,  {.ui = 3 } },
 
 	{ MODKEY|ShiftMask,             XK_t,        togglebar,      {0} },
 

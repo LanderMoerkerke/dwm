@@ -107,7 +107,6 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_c,        killclient,     {0} },
 
-	/* { MODKEY,                       XK_t,        togglescratch,  {.v = scratchpad_cmd } }, */
  	{ MODKEY,            			XK_t,  	     togglescratch,  {.ui = 0 } },
  	{ MODKEY,            			XK_r,	     togglescratch,  {.ui = 1 } },
  	{ MODKEY|ShiftMask,   			XK_r,	     togglescratch,  {.ui = 2 } },

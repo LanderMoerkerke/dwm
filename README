@@ -2,6 +2,32 @@ dwm - dynamic window manager
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.
 
+Patches
+-------
+
+- dwm-activetagindicatorbar-6.2.diff
+- dwm-alpha-20180613-b69c870.diff
+- dwm-alternativetags-6.2.diff
+- dwm-bottomstack-20160719-56a31dc.diff
+- dwm-centeredmaster-20160719-56a31dc.diff
+- dwm-centeredwindowname-20190907-cb3f58a.diff
+- dwm-columns-6.0.diff
+- dwm-deck-6.0.diff
+- dwm-ewmhtags-6.2.diff
+- dwm-fakefullscreen-20170508-ceac8c9.diff
+- dwm-fibonacci-5.8.2.diff
+- dwm-focusonnetactive-6.2.diff
+- dwm-gridmode-20170909-ceac8c9.diff
+- dwm-horizgrid-6.1.diff
+- dwm-movestack-6.1.diff
+- dwm-pertag-20170513-ceac8c9.diff
+- dwm-scratchpads-20200414-728d397b.diff
+- dwm-sticky-20160911-ab9571b.diff
+
+TODO
+----
+
+- dwm-cyclelayouts-20180524-6.2.diff
 
 Requirements
 ------------

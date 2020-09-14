@@ -68,10 +68,10 @@ static const Rule rules[] = {
     { "St",       NULL,       NULL,       	    0,            0,          1,           0,         -1 },
     { "URxvt",    NULL,       NULL,       	    0,            0,          1,           0,         -1 },
 	{ NULL,       NULL,       "Event Tester",   0,            0,          0,           1,         -1 },
-	{ NULL,		  "sp-tmux",  NULL,	            SPTAG(0),	  1,		  0,           0,         -1 },
-	{ NULL,		  "sp-lf",	  NULL,	            SPTAG(1),	  1,		  0,           0,         -1 },
-	{ NULL,		  "sp-math",  NULL,	            SPTAG(2),	  1,		  0,           0,         -1 },
-	{ NULL,		  "caprine",  NULL,	            SPTAG(3),	  1,		  0,           0,         -1 },
+	{ NULL,		  "sp-tmux",  NULL,	            SPTAG(0),	  1,		  0,           1,         -1 },
+	{ NULL,		  "sp-lf",	  NULL,	            SPTAG(1),	  1,		  0,           1,         -1 },
+	{ NULL,		  "sp-math",  NULL,	            SPTAG(2),	  1,		  0,           1,         -1 },
+	{ NULL,		  "caprine",  NULL,	            SPTAG(3),	  1,		  0,           1,         -1 },
 };
 
 /* layout(s) */

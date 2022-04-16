@@ -42,12 +42,14 @@ const char *spcmd1[] = {"urxvtc", "-name", "sp-tmux", "-geometry", "120x50", "-e
 const char *spcmd2[] = {"urxvtc", "-name", "sp-lf",   "-geometry", "144x41", "-e", "lf", NULL };
 const char *spcmd3[] = {"urxvtc", "-name", "sp-math", "-geometry", "100x40", "-e", "scratch-math", NULL };
 const char *spcmd4[] = {"caprine", NULL };
+const char *spcmd5[] = {"ferdi", NULL };
 static Sp scratchpads[] = {
 	/* name          cmd  */
 	{"sp-tmux",      spcmd1},
 	{"sp-lf",        spcmd2},
 	{"sp-math",      spcmd3},
 	{"caprine",      spcmd4},
+	{"ferdi",        spcmd5},
 };
 
 /* tagging */
@@ -72,6 +74,7 @@ static const Rule rules[] = {
 	{ NULL,		  "sp-lf",	  NULL,	            SPTAG(1),	  1,		  0,           1,         -1 },
 	{ NULL,		  "sp-math",  NULL,	            SPTAG(2),	  1,		  0,           1,         -1 },
 	{ NULL,		  "caprine",  NULL,	            SPTAG(3),	  1,		  0,           1,         -1 },
+	{ NULL,		  "ferdi",    NULL,	            SPTAG(4),	  1,		  0,           1,         -1 },
 };
 
 /* layout(s) */
@@ -116,6 +119,7 @@ static Key keys[] = {
  	{ MODKEY,            			XK_r,	     togglescratch,  {.ui = 1 } },
  	{ MODKEY|ShiftMask,   			XK_r,	     togglescratch,  {.ui = 2 } },
  	{ MODKEY|ShiftMask,   			XK_m,	     togglescratch,  {.ui = 3 } },
+ 	{ MODKEY|ShiftMask,   			XK_f,	     togglescratch,  {.ui = 4 } },
 
 	{ MODKEY|ShiftMask,             XK_t,        togglebar,      {0} },
 

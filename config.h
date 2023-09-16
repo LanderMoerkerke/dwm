@@ -42,7 +42,7 @@ const char *spcmd1[] = {"urxvtc", "-name", "sp-tmux", "-geometry", "230x60", "-e
 const char *spcmd2[] = {"urxvtc", "-name", "sp-lf",   "-geometry", "144x41", "-e", "lf", NULL };
 const char *spcmd3[] = {"urxvtc", "-name", "sp-math", "-geometry", "100x40", "-e", "scratch-math", NULL };
 const char *spcmd4[] = {"caprine", NULL };
-const char *spcmd5[] = {"ferdi", NULL };
+const char *spcmd5[] = {"ferdium", NULL };
 static Sp scratchpads[] = {
 	/* name          cmd  */
 	{"sp-tmux",      spcmd1},
